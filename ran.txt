@@ -1,0 +1,4 @@
+docker build -t my_app .
+docker run -v %cd%/data:/app/data -v %cd%:/app my_app
+docker run -v %cd%/data:/app/data -v %cd%:/app -it m_app python inference.py
+docker eun -p 5000:5000 flask-app
